@@ -1,0 +1,87 @@
+.gridContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+}
+
+.containerDaMensagem{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 150px;
+    color: white;
+}
+
+.containerDaMensagem .texto{
+    font-size: 2rem;
+    margin-top: 15px;
+}
+
+.containerDoFormulario{
+    padding: 50px 100px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.containerDoFormulario .caixaDoFormulario{
+    background-color: white;
+    font-size: 22.5px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.containerDoFormulario .caixaDoFormulario .inputItem{
+    height: 4.5rem;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 23px;
+    border: 2px solid black;
+}
+
+.containerDoFormulario .caixaDoFormulario .inputItem.textarea{
+    height: 200px;
+}
+
+.containerDoFormulario .caixaDoFormulario .avisoCamposObrigatorios{
+    margin: 10px 0 40px 0;
+}
+
+.containerDoFormulario .caixaDoFormulario #botaoDeEnviar{
+    height: 75px;
+    background-color: #3CCC87;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.containerDoFormulario .caixaDoFormulario .campo-obrigatorio{
+    font-size: 15px;
+    margin-bottom: 10px;
+    visibility: hidden;
+    color: red;
+}
+
+.caixaDoFormulario .inputItem.invalido{
+    border-color: red;
+}
+
+.caixaDoFormulario .inputItem.valido{
+    border-color: rgb(38, 207, 38);
+}
+
+@media (max-width: 1300px){
+    .gridContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .containerDoFormulario{
+        margin: 0;
+    }
+}

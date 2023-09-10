@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: url('./img/bg-repeat.jpg') center center repeat-x;
+    background-size: contain;
+    height: 100vh;
+    width: 100vw;
+}
